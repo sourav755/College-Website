@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | The Oxford College of Science</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    img{
+        position: relative;
+        top: 10px;
+        size: 10px;
+    }
+
+    .oxf{
+        margin: 2px 2px 0px 2px;
+        padding: 2px;
+        display: flex;
+        position: relative;
+        background-color: honeydew;
+    }
+
+    .name{
+        margin: 0px 100px;
+        padding: 24px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    header {
+      /* background-color: rgb(179, 224, 213); */
+      background-color: rgb(153, 183, 190);
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        margin: 6px 95px 6px 35px;
+        padding: 13px;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        text-decoration: none;
+    }
+
+    .left{
+        display: block;
+    }
+
+    .right{
+        position: absolute;
+        display: inline-block;
+        right: 9px;
+        top: 113px;
+    }
+
+    .btn {
+      margin: 8px;
+      padding: 12px;
+      border-radius: 6px;
+      background-color: honeydew;
+    }
+
+    .btn1 {
+      margin: 0px 20px;
+    }
+
+    .btn:hover {
+      background-color: tomato;
+      cursor: pointer;
+    }
+
+    .navbar li a:hover {
+      text-decoration: underline;
+    }
+
+    .container{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(
+            rgba(4,9,30,0.7),
+            rgba(4,9,30,0.7)
+        ),
+        url(banner.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .text-box{
+        width: 90%;
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #wbu {
+      font-size: 60px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 12px 34px;
+      font-size: 13px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+      margin: 25px 0px 25px 0px;
+      background-color: rgb(9, 13, 56);
+    }
+
+    .hero-btn:hover {
+      background-color: tomato;
+      border-color: tomato;
+      transition: 0.5s;
+    }
+
+    .course {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #cwo {
+      font-size: 65px;
+      font-weight: 600;
+    }
+
+    p {
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      padding: 10px;
+    }
+
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .course-col {
+      flex-basis: 31%;
+      /* border: solid 2px; */
+      background: rgb(236, 220, 220);
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: 0.5s;
+    }
+
+    h3 {
+      text-align: center;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .course-col:hover {
+      box-shadow: 0 0 20px 0 rgb(119, 114, 119);
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      background-color: honeydew;
+    }
+
+    .footer h4 {
+      margin-bottom: 25px;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .icons .fa {
+      color: #f44336;
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18px 0;
+    }
+
+    .fa-heart-o {
+      color: #f44336;
+    }
+</style>
+<body>
+    <div class="oxf">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="name">
+            <h1>The Oxford College Of Science</h1>
+        </div>
+    </div>
+
+    <header class="navi">
+        <div class="left">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn btn1">Sign In</button>
+            <button class="btn btn2">Sign Up</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="text-box">
+            <h1 id="wbu">World's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis quasi temporibus quam nemo molestias. Alias nemo quaerat, voluptatum incidunt mollitia voluptatibus aliquid dolor nisi est ducimus? Nulla sunt repudiandae maxime ad, excepturi nostrum dolor!</p>
+            <button class="hero-btn">Visit Us To Know More</button>
+        </div>
+    </div>
+
+    <section class="course">
+        <h1 id="cwo">Courses We Offer</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, ipsum.
+        </p>
+  
+        <div class="row">
+          <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis architecto neque excepturi eveniet, rerum repellat
+              placeat impedit vel porro rem. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Deleniti, commodi. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Atque labore exercitationem
+              facere voluptatem quae, laborum cupiditate assumenda in dolores
+              consequuntur perferendis unde id dicta consectetur accusamus sed
+              maiores, delectus dolorum?
+            </p>
+          </div>
+  
+          <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis architecto neque excepturi eveniet, rerum repellat
+              placeat impedit vel porro rem. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Deleniti, commodi Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Vitae nostrum id autem. Unde
+              hic quae placeat ad delectus odio, sed harum, praesentium doloribus
+              molestias assumenda natus esse blanditiis consectetur culpa.
+            </p>
+          </div>
+  
+          <div class="course-col">
+            <h3>Post-Graduation</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis architecto neque excepturi eveniet, rerum repellat
+              placeat impedit vel porro rem. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Deleniti,Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Animi consectetur, nam culpa
+              reprehenderit enim ad porro temporibus perspiciatis nesciunt saepe
+              quidem provident. Maiores ipsam quasi magni, officia asperiores
+              blanditiis Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis numquam ducimu.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eaque quam
+          porro molestias <br />temporibus eum iure, distinctio recusandae
+          molestiae saepe fuga ipsa, cupiditate laboriosam minima numquam nisi
+          pariatur enim tenetur.
+        </p>
+        <div class="icon">
+          <a href="https://www.facebook.com/"> <i class="fa fa-facebook"></i></a>
+          <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Sourav</p>
+    </section>
+</body>
+</html>
